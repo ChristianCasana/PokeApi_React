@@ -8,7 +8,7 @@ function App() {
   const [pokemon, setPokemon] = useState()
 
   useEffect(() => {
-    const URL = 'http://pokeapi.co/api/v2/pokemon/squirtle/'
+    const URL = 'http://pokeapi.co/api/v2/pokemon/squirtle'
     axios.get(URL)
       .then(res => setPokemon(res.data))
       .catch(err => console.log(err))
